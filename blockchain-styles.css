@@ -1,28 +1,16 @@
-/*
-    Name: Anna Kitagawa
-    CS 132 
-
-    This is the blockchain-styles.css page for my blockchain club 
-    website.
-    It is only used by the page giving more information about the
-    blockchain and does not include any overlapping style with the
-    homepage.
-*/
-
-/* I know it's a bit redundant to do the borders like this since all of the borders are
-around sections anyway, but I did it like this so that the border thickness isn't doubled where
-two sections are touching */
-#motivation, #logistics, #crypto {
-    padding-left: 2%;
-    padding-right: 2%;
-    border-top: 10px solid #626598;
-    border-bottom: 10px solid #626598;
+section {
+    padding: 2%;
+    background-color: #2f2f2f;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 255);
 }
 
-#motivation, #logistics {
-    border-left: 10px solid #626598;
+section > p {
+    font-size: 13pt;
 }
 
-#logistics, #crypto {
-    border-right: 10px solid #626598;
+main {
+    padding-left: 7%;
+    padding-right: 7%
 }

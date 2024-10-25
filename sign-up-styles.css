@@ -1,0 +1,9 @@
+iframe {
+    width: 50%;
+    filter: invert(1) hue-rotate(180deg);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}

@@ -1,30 +1,38 @@
-/*
-    Name: Anna Kitagawa
-    CS 132 
+#leadership-cards {
+    display: flex;
+    justify-content: space-between;
+}
 
-    This is the home-styles.css page for my blockchain club website.
-    It is only used by the homepage, but the styles specified here are not part of the theme.
-*/
-
-/* I know it's a bit redundant to do the borders like this since all of the borders are
-around sections anyway, but I did it like this so that the border thickness isn't doubled where
-two sections are touching */
-#club-overview {
+#landing {
+    width: 100%;
     padding-left: 7%;
     padding-right: 7%;
-    border: 10px solid #626598;
-}
-
-#upcoming-events, #leadership {
-    border-top: 10px solid #626598;
-    border-left: 10px solid #626598;
-    border-right: 10px solid #626598;
-}
-
-#upcoming-events {
-    padding-bottom: 10%;
+    font-size: 67pt;
 }
 
 #leadership {
-    border-bottom: 10px solid #626598;
+    margin: -30px;
+    padding: 10%;
+}
+
+.namecard {
+    width: 6em;
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+#hover-pres {
+    box-shadow: 0 0 8px 2px rgb(0, 0, 255);
+}
+
+#hover-treas {
+    box-shadow: 0 0 8px 2px rgb(255, 0, 0);
+}
+
+iframe {
+    border: 0;
+    width: 95%;  
+    height: 20em;
+    overflow: hidden;
+    filter: invert(1) hue-rotate(180deg);
 }
