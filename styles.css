@@ -116,3 +116,7 @@ aside {
     min-width: 330px;
     background-color: #0c0c0c;
 }
+
+.panel-container:hover {
+    border: 2px solid #2c2cdb;
+}
