@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".panel-header").forEach(button => {
+    document.querySelectorAll(".panel-container").forEach(button => {
         button.addEventListener("click", () => {
-            const panelContainer = button.parentElement;
-            panelContainer.classList.toggle("show");
+            button.classList.toggle("show");
         });
     });
 

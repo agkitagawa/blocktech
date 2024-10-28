@@ -2,12 +2,14 @@
     width: 100%;
     max-width: 300px;
     padding: 2%;
-    height: 10em;
+    height: 7em;
     background-color: #0c0c0c;
     border-radius: 15px;
     box-shadow: 0 0 15px 5px #1010ce;
-    align-content: center;
-    display: inline-block;
+    justify-content: center;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -25,12 +27,8 @@ main {
     display: inline-block;
 }
 
-button {
-    font-size: 25pt;
-}
-
 section p {
-    font-size: 8.5pt;
+    font-size: 8pt;
 }
 
 #blockchain-main {
