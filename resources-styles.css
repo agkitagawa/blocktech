@@ -2,6 +2,7 @@
     width: 100%;
     padding: 2%;
     margin-left: -20px;
+    margin-right: -20px;
     background-color: #0c0c0c;
     box-shadow:  0 -5px 5px #1010ce, 0 5px 5px #1010ce;
     align-content: center;
@@ -67,4 +68,10 @@ ul.custom-bullets li::before {
     position: absolute;
     left: 0;
     top: 0.5em;
+}
+
+.panel-container:hover {
+    border-top: 2px solid #2c2cdb;
+    border-bottom: 2px solid #2c2cdb;
+    box-shadow: 0 -5px 5px #2c2cdb, 0 5px 5px #2c2cdb;
 }

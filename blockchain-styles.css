@@ -7,9 +7,13 @@
     border-radius: 15px;
     box-shadow: 0 0 15px 5px #1010ce;
     justify-content: center;
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
+}
+
+.panel-container:hover {
+    border: 2px solid #2c2cdb;
+    box-shadow: 0 0 15px 5px #2c2cdb;
 }
 
 main {
