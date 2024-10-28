@@ -1,3 +1,12 @@
+main {
+    background-image:
+        linear-gradient(to bottom, black, transparent 10%, transparent 90%, black),
+        url('imgs/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #leadership-cards {
     display: flex;
     justify-content: space-between;

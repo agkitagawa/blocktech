@@ -1,0 +1,70 @@
+.panel-container {
+    width: 100%;
+    padding: 2%;
+    margin-left: -20px;
+    background-color: #0c0c0c;
+    box-shadow:  0 -5px 5px #1010ce, 0 5px 5px #1010ce;
+    align-content: center;
+    display: inline-block;
+}
+
+main {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.panel-container.show {
+    height: auto;
+    display: inline-block;
+}
+
+button {
+    font-size: 20pt;
+}
+
+.panel-container a {
+    text-decoration: none;
+}
+
+#blockchain-main {
+    padding-left: 7%;
+    padding-right: 7%
+}
+
+.panel-header {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #0c0c0c;
+    color: #ceccccfd; 
+    text-align: left;
+}
+
+.panel-content {
+    padding-left: 3em;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.panel-container.show .panel-content {
+    max-height: 100%;
+    display: block; 
+    text-align: left;
+}
+
+ul.custom-bullets li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+ul.custom-bullets li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #ceccccfd; 
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+}

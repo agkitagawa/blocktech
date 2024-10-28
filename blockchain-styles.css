@@ -12,6 +12,12 @@
 
 main {
     align-items: center;
+    background-image:
+        linear-gradient(to bottom, black, transparent 10%, transparent 90%, black),
+        url('imgs/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .panel-container.show {
@@ -38,7 +44,7 @@ section p {
     cursor: pointer;
     border: none;
     background-color: #0c0c0c;
-    color: white;
+    color: #ceccccfd; 
 }
 
 .panel-content {
