@@ -1,25 +1,32 @@
-const presHoverImage = document.getElementById("hover-pres");
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".panel-header").forEach(button => {
+        button.addEventListener("click", () => {
+            const panelContainer = button.parentElement;
+            panelContainer.classList.toggle("show");
+        });
+    });
 
-const presHeadshot = "imgs/anna-headshot.jpg";
-const presNamecard = "imgs/anna-namecard.jpg";
+    const presHoverImage = document.querySelector("#hover-pres");
+    const presHeadshot = "imgs/anna-headshot.jpg";
+    const presNamecard = "imgs/anna-namecard.jpg";
 
-presHoverImage.addEventListener("mouseover", () => {
-    presHoverImage.src = presNamecard;
-});
+    const treasHoverImage = document.querySelector("#hover-treas");
+    const treasHeadshot = "imgs/sean-headshot.jpg";
+    const treasNamecard = "imgs/sean-namecard.jpg";
 
-presHoverImage.addEventListener("mouseout", () => {
-    presHoverImage.src = presHeadshot;
-});
+    presHoverImage.addEventListener("mouseover", () => {
+        presHoverImage.src = presNamecard;
+    });
 
-const treasHoverImage = document.getElementById("hover-treas");
+    presHoverImage.addEventListener("mouseout", () => {
+        presHoverImage.src = presHeadshot;
+    });
 
-const treasHeadshot = "imgs/sean-headshot.jpg";
-const treasNamecard = "imgs/sean-namecard.jpg";
+    treasHoverImage.addEventListener("mouseover", () => {
+        treasHoverImage.src = treasNamecard;
+    });
 
-treasHoverImage.addEventListener("mouseover", () => {
-    treasHoverImage.src = treasNamecard;
-});
-
-treasHoverImage.addEventListener("mouseout", () => {
-    treasHoverImage.src = treasHeadshot;
+    treasHoverImage.addEventListener("mouseout", () => {
+        treasHoverImage.src = treasHeadshot;
+    });
 });

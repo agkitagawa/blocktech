@@ -1,6 +1,7 @@
 html, header, body, main, footer, nav, aside {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
   
 html, body, footer, aside {
@@ -36,13 +37,22 @@ header nav a {
     color: #a0a0a0; 
 }
 
-header, body, footer {
-    font-family: "Josefin Sans", sans-serif;
+main {
+    background-image:
+        linear-gradient(to bottom, black, transparent 10%, transparent 90%, black),
+        url('imgs/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header, main, body, footer, button {
+    font-family: "Roboto Mono", sans-serif;
     background-color: #000000;
 }
 
 h1, body, footer, a {
-    color: #dadada; 
+    color: #ceccccfd; 
 }
 
 section > p, section > ul {
@@ -108,10 +118,10 @@ aside {
     padding-bottom: 3%;
     border-top-left-radius: 15px; 
     border-bottom-left-radius: 15px;
-    box-shadow: 0 0 15px 5px rgb(0, 255, 0);
+    box-shadow: 0 0 15px 5px #1010ce;
     width: 40%;
     margin-left: 10px;
     margin-right: -10px;
     min-width: 330px;
-    background-color: #2f2f2f;
+    background-color: #0c0c0c;
 }

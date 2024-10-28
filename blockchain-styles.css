@@ -1,16 +1,53 @@
-section {
+.panel-container {
+    width: 100%;
+    max-width: 300px;
     padding: 2%;
-    background-color: #2f2f2f;
-    margin: 20px;
+    height: 10em;
+    background-color: #0c0c0c;
     border-radius: 15px;
-    box-shadow: 0 0 10px 5px rgb(0, 0, 255);
-}
-
-section > p {
-    font-size: 13pt;
+    box-shadow: 0 0 15px 5px #1010ce;
+    align-content: center;
+    display: inline-block;
 }
 
 main {
+    align-items: center;
+}
+
+.panel-container.show {
+    height: auto;
+    display: inline-block;
+}
+
+button {
+    font-size: 25pt;
+}
+
+section p {
+    font-size: 8.5pt;
+}
+
+#blockchain-main {
     padding-left: 7%;
     padding-right: 7%
+}
+
+.panel-header {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #0c0c0c;
+    color: white;
+}
+
+.panel-content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.panel-container.show .panel-content {
+    max-height: 100%;
+    display: block; 
+    text-align: left;
 }

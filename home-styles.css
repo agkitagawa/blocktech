@@ -5,9 +5,10 @@
 
 #landing {
     width: 100%;
-    padding-left: 7%;
-    padding-right: 7%;
-    font-size: 67pt;
+    padding-left: 5%;
+    padding-right: 11%;
+    font-size: 57pt;
+    align-content: center;
 }
 
 #leadership {
@@ -19,14 +20,7 @@
     width: 6em;
     border-radius: 50%; 
     object-fit: cover; 
-}
-
-#hover-pres {
-    box-shadow: 0 0 8px 2px rgb(0, 0, 255);
-}
-
-#hover-treas {
-    box-shadow: 0 0 8px 2px rgb(255, 0, 0);
+    box-shadow: 0 0 15px 5px #1010ce;
 }
 
 iframe {
